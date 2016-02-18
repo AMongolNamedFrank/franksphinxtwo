@@ -6,7 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = _build
-NIDATADIR     = `python -c 'import nidata; import os; print(os.path.dirname(nidata.__file__))'`
+NIDATADIR     = $(shell python -c 'import nidata; import os; print(os.path.dirname(nidata.__file__))')
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
@@ -53,7 +53,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 html:
-	sphinx-apidoc $(NIDATADIR) --full -o doc -H 'NiData' -A 'Frank' -V '1.0' 
+	sphinx-apidoc --full -o doc -H 'NiData' -A 'Frank' -V '1.0' $(NIDATADIR) `find $(NIDATADIR) -name \*test\*.py` `find $(NIDATADIR) -name example\*.py`
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
