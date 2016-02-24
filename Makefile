@@ -53,7 +53,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 html:
-	sphinx-apidoc --full -o doc -H 'NiData' -A 'Frank' -V '1.0' $(NIDATADIR) `find $(NIDATADIR) -name \*test\*.py` `find $(NIDATADIR) -name example\*.py`
+	sphinx-apidoc -o doc -H 'NiData' -A 'Frank' -V '1.0' $(NIDATADIR) `find $(NIDATADIR) -name \*test\*.py` `find $(NIDATADIR) -name example\*.py`
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
