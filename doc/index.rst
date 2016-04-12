@@ -10,11 +10,11 @@ Welcome to Nidata!
 
 .. container:: index-paragraph
 
-    The goal of this tool is to offer a simple interface for downloading, storing, and getting access to neuroimaging datasets. We want to:
+ The goal of this tool is to offer a simple interface for downloading, storing, and getting access to neuroimaging datasets. We want to:
 
-    - Decrease the amount of time spent by data scientists in accessing new datasets
-    - Decrease the difficulty of scientists in sharing their data with the world
-    - Increase the visibility of available data
+- Decrease the amount of time spent by data scientists in accessing new datasets
+- Decrease the difficulty of scientists in sharing their data with the world
+- Increase the visibility of available data
 
 .. raw:: html
 
