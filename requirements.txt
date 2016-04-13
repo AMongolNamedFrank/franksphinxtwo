@@ -1,2 +1,3 @@
 sphinx
 numpydoc
+sphinxjp.themes.basicstrap
