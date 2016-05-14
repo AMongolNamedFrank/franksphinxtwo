@@ -3,7 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: /Users/fliao/Documents/franksphinxtwo/doc/images/nidata-logo.jpg
+.. image:: images/nidata-logo.jpg
+  :width: 200px
 
 Welcome to Nidata!
 ==================================
